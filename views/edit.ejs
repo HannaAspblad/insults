@@ -1,0 +1,11 @@
+<main>
+  <h2>Edit insult</h2>
+
+  <form action="/edit/<%=insult.id %>" method="POST">
+    <input type="text" name="text" value="<%=insult.text  %> " />
+    <input type="text" name="origin" value="<%=insult.origin  %>" />
+    <input type="number" name="severity" value="<%=insult.severity %>" />
+    <input type="hidden" name="id" value="<%=insult.id %>" />
+    <button>submit</button>
+  </form>
+</main>

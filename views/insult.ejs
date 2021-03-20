@@ -1,0 +1,53 @@
+<main>
+  <span class="insults-top">
+
+    <h2><%=pageTitle%></h2>
+
+    <span class="insults-icons">
+
+      <% if(filtered){ refreshPage = '/'+insult.severity } else{ refreshPage =
+      '/' } %> <% if(display){ %>
+      <a href="<%=refreshPage%> ">
+        <img
+          class="refresh-icon"
+          src="/assets/refresh_black_24dp.svg"
+          alt="refresh icon"
+      /></a>
+
+      <% } %> <% if(display){ %>
+      <form action="/favorite" method="POST">
+        <button
+          class="favorite-button"
+          name="favorite"
+          value="<%-insult.id  %> "
+        >
+    
+          <img class="favorite-icon" src="/assets/favorite_border-24px.svg" alt="heart" />
+        </button>
+      </form>
+
+      <%}%>
+    </span>
+  </span>
+
+  <ul>
+    <li>
+      <p>Text:</p>
+      <%=insult.text %>
+    </li>
+    <li>
+      <p>Origin:</p>
+      <%=insult.origin %>
+    </li>
+    <li>
+      <p>Severity:</p>
+      <%=insult.severity %>
+    </li>
+    <li>
+      <p>ID:</p>
+      <%=insult.id %>
+    </li>
+  </ul>
+
+  <a href="/books/<%=bookId%> "><button>more info</button></a>
+</main>
