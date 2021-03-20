@@ -1,0 +1,144 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/*--------------------- font --------------------- */
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: rgb(59, 59, 59);
+  padding: 0.2rem;
+}
+
+h2 {
+  padding: 0.2rem;
+}
+
+p {
+  font-weight: bold;
+  display: inline;
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+  color:rgb(59, 59, 59);
+  
+}
+
+nav a:hover{
+font-weight: bold;
+}
+
+/* --------------------- body --------------------- */
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 16rem;
+  margin-bottom: 4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-bar-icon:hover{
+    filter: invert(80%);
+}
+
+
+
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+/* --------------------- insults view --------------------- */
+
+.insults-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.insults-icons {
+  display: flex;
+  align-items: center;
+}
+
+.refresh-icon,
+.favorite-icon {
+  width: 24px;
+  cursor: pointer;
+  
+}
+
+.refresh-icon:hover,
+.favorite-icon:hover {
+  filter: invert(80%);
+  
+}
+ul {
+    list-style: none;
+    padding: 0.2rem;
+    margin-bottom: 3rem;
+}
+
+.favorite-button {
+    all: unset;
+    margin: 0 1rem;
+}
+
+
+/* --------------------- input views --------------------- */
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+}
+
+input {
+  padding: 0.8rem;
+  margin: 0.2rem;
+}
+
+footer {
+  min-height: 16rem;
+  background-color: rgb(59, 59, 59);
+  margin-top: 8rem;
+}
+
+/* --------------------- common --------------------- */
+
+button {
+    all: unset;
+    padding: 0.8rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid rgb(59, 59, 59);
+  }
+  
+  button:hover {
+    color: rgb(59, 59, 59);
+    background-color: white;
+  }
