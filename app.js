@@ -170,12 +170,13 @@ app.use(function (req, res) {
     .render("error.ejs", {
       message: "404: Page not found",
       title: "hej men nej",
+      display: true,
     })
 })
 
 app.use(function (error, req, res, next) {
   let display = false
-  let message = "Too much of an insult! Try again with a lower severity... jeez"
+  let message = "Nothing to see here"
   if (req.path == "/favorite") {
     message = "No favorite insult yet. If you search you will find!"
   }
